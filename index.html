@@ -19,14 +19,33 @@
 </head>
 <style>
     .t {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
     
     .mock {
-        height: 40vh;
-        width: auto;
-        max-width: 80px;
-        box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px 2px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .iphone {
+        display: block;
+        color: #000;
+        background-color: white;
+        background-repeat: no-repeat, no-repeat;
+        border: solid #111;
+        position: relative;
+        overflow-y: auto;
+        box-shadow: 0 0.5em 2em 0.2em rgb(0 0 0 / 33%), 0 0 0 0.5px #000 inset;
+        border-width: 1.0207920792vmin;
+        border-radius: 3.7550130098vmin;
+        aspect-ratio: 9 / 18;
+        overflow: hidden;
+        margin: 0px 10px;
+    }
+    
+    .iphone img {
+        padding: 0;
+        margin: 0;
     }
 </style>
 
@@ -36,7 +55,8 @@
             <section>
                 <span class="t">Le bien-être au travail</span>
                 <h5 style="font-weight: 300;">grâce au digital</h5>
-                <img src="./k.png" alt="" style="height: 30vh ;">
+                <img src="./k.png" alt="" style="height: 20vh ;">
+                <p>Tous pour un travail descent</p>
             </section>
             <section>
                 <span style="font-size: 1.5em;">Les entreprises peinent à fidéliser leur salarié</span>
@@ -46,19 +66,18 @@
                 <img src="./l.png" alt="" style="height: auto; width:auto">
             </section>
             <section data-auto-animate data-auto-animate-unmatched="fade">
-                <img src="./l.png" alt="" style="height: 10vh; width:auto">
-                <div>
-                    <img class="mock" src="mockup/1.png" alt="">
-                    <img class="mock" src="mockup/2.png" alt="">
-                    <img class="mock" src="mockup/3.png" alt="">
-                    <img class="mock" src="mockup/4.png" alt="">
-                    <img class="mock" src="mockup/5.png" alt="">
+                <img src="./l.png" alt="" style="height: auto; width:12em">
+                <div style="display: flex;">
+                    <div class="iphone"><img class="mock" src="mockup/1.png" alt=""></div>
+                    <div class="iphone"><img class="mock" src="mockup/2.png" alt=""></div>
+                    <div class="iphone"><img class="mock" src="mockup/3.png" alt=""></div>
+                    <div class="iphone"><img class="mock" src="mockup/4.png" alt=""></div>
+                    <div class="iphone"><img class="mock" src="mockup/5.png" alt=""></div>
                 </div>
             </section>
             <section data-auto-animate data-auto-animate-unmatched="fade">
-                <img style="height: 55vh; width: auto;" src="mockup/web.png" alt="">
-                <br>
-                <img src="./l.png" alt="" style="height: 10vh; width:auto">
+                <img style="height: 60vh; width: auto;" src="mockup/web.png" alt="">
+                <img src="./l.png" alt="" style="height: auto; width:12em; margin-top: -90px;">
             </section>
             <section>
                 <span style="font-size: 1.5em;">Prévision</span>
