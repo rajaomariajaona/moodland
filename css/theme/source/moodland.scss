@@ -1,0 +1,45 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+/* devanagari */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+$mainColor: #5E5856;
+$headingColor: #5E5856;
+$mainFontSize: 42px;
+$mainFont: 'Poppins',
+Helvetica,
+sans-serif;
+$headingFont: 'Poppins',
+Helvetica,
+sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #D49234;
+$linkColorHover: lighten( $linkColor,
+15%);
+$selectionBackgroundColor: lighten( $linkColor,
+25%);
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
