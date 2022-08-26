@@ -50,6 +50,16 @@
         padding: 0;
         margin: 0;
     }
+    
+    .item {
+        display: flex;
+        flex-direction: column-reverse;
+        font-weight: 600;
+    }
+    
+    .item span {
+        margin-bottom: 15px;
+    }
 </style>
 
 <body>
@@ -76,11 +86,16 @@
             <section data-auto-animate data-auto-animate-unmatched="fade">
                 <img src="./l.png" alt="" style="height: auto; width:12em">
                 <div style="display: flex;">
-                    <div class="iphone"><img class="mock" src="mockup/1.png" alt=""></div>
-                    <div class="iphone"><img class="mock" src="mockup/2.png" alt=""></div>
-                    <div class="iphone"><img class="mock" src="mockup/3.png" alt=""></div>
-                    <div class="iphone"><img class="mock" src="mockup/4.png" alt=""></div>
-                    <div class="iphone"><img class="mock" src="mockup/5.png" alt=""></div>
+                    <div class="item">
+                        <div class="iphone"><img class="mock" src="mockup/1.png" alt=""></div><span style="font-size: 0.4em; color: #D49234;">Sondage</span></div>
+                    <div class="item">
+                        <div class="iphone"><img class="mock" src="mockup/2.png" alt=""></div><span style="font-size: 0.4em; color: #D49234;">Humeur</span></div>
+                    <div class="item">
+                        <div class="iphone"><img class="mock" src="mockup/3.png" alt=""></div><span style="font-size: 0.4em; color: #D49234;">Profil</span></div>
+                    <div class="item">
+                        <div class="iphone"><img class="mock" src="mockup/4.png" alt=""></div><span style="font-size: 0.4em; color: #D49234;">Mode pro</span></div>
+                    <div class="item">
+                        <div class="iphone"><img class="mock" src="mockup/5.png" alt=""></div><span style="font-size: 0.4em; color: #D49234;">Centre d'intêret</span></div>
                 </div>
             </section>
             <section data-auto-animate data-auto-animate-unmatched="fade">
